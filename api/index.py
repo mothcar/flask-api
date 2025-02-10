@@ -5,6 +5,11 @@ import FinanceDataReader as fdr
 
 app = FastAPI()
 
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
 # start_param = sys.argv[1]
 # end_param = sys.argv[2]
 
@@ -61,9 +66,6 @@ end_date = "2025-02-05"
 # print(kospi_analysis)
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
 
 @app.get("/getStockInfo")
 async def stock():
