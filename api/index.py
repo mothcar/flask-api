@@ -8,7 +8,7 @@ app = FastAPI()
 # start_param = sys.argv[1]
 # end_param = sys.argv[2]
 
-def analyze_kospi_movement(start_date, end_date):
+async def analyze_kospi_movement(start_date, end_date):
     """
     Analyzes the movement of KOSPI stock prices between open and close for given tickers.
 
