@@ -55,8 +55,7 @@ async def analyze_kospi_movement(start_date, end_date):
 
 
 # Example usage:
-start_date = "2025-01-01"
-end_date = "2025-02-05"
+
 # kospi_analysis = analyze_kospi_movement(start_date, end_date)
 # print(kospi_analysis)
 
@@ -67,6 +66,8 @@ async def root():
 
 @app.get("/getStockInfo")
 async def stock():
+    start_date = "2025-01-01"
+    end_date = "2025-02-05"
     kospi_analysis = analyze_kospi_movement(start_date, end_date)
     # print(kospi_analysis)
     return kospi_analysis
