@@ -1,5 +1,5 @@
 fastapi==0.88.0
 uvicorn==0.20.0
-finance-datareader
-pandas
+finance-datareader==0.9.0
+# pandas
 # other required dependencies
