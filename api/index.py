@@ -63,6 +63,10 @@ end_date = "2025-02-05"
 
 @app.get("/")
 async def root():
+    return {"message": "Hello World"}
+
+@app.get("/getStockInfo")
+async def stock():
     kospi_analysis = analyze_kospi_movement(start_date, end_date)
     # print(kospi_analysis)
     return kospi_analysis
