@@ -68,7 +68,7 @@ async def root():
 @app.get("/getStockInfo")
 async def stock():
     kospi_analysis =  await analyze_kospi_movement(start_date, end_date)
-    print(kospi_analysis)
+    # print(kospi_analysis)
     return kospi_analysis
 
 # if __name__ == "__main__":
